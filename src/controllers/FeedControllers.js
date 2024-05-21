@@ -1,3 +1,4 @@
-exports.feedIndex = (req,res) =>{
-    res.render('Feed');  
+exports.feedIndex = (req,res) =>{ 
+    if(req.session.user) return res.render('Feed');
+      
 } 

@@ -2,7 +2,9 @@
 const SignUpAndLoginModel = require("../models/LoginAndSignUpModel");
 //render Home 
 exports.index = (req, res) => {
-   res.render("Home");
+   if(req.session.user) res.redirect("/feed"); 
+   res.render("Home"); 
+
 }
 //render page Login
 exports.indexLogin = (req, res) => {
@@ -44,7 +46,8 @@ exports.auth = async (req, res) => {
    } else {
       req.session.user = signup.user;
 
-      req.flash("sucess", "Login feito com sucesso!");
+      req.flash("sucess", "Login feito com sucesso!"); 
+      
       req.session.save(() => {
          return res.redirect("/feed");
 
