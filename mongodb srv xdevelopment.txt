@@ -1,0 +1,1 @@
+mongodb+srv://xdevelopment:<password>@reciclador-digital.gbntfos.mongodb.net/

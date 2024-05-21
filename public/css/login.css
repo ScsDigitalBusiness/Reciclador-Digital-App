@@ -1,0 +1,72 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.Login-area {
+  background: url(../utilites/login-bg.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  flex-direction: column;
+}
+.form-login {
+
+  height: 45vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 99%; 
+  gap: 3vh;
+}
+#E-mail,#Senha{
+    width: 90%; 
+    padding: 3.5vh; 
+    border-radius: 20vh;
+    border: none; 
+    background-color: #EDF0F7;
+    color: gray; 
+    font-size: 1.1em;  
+    font-family: 700;
+
+}   
+#E-mail,#Senha:focus {
+    outline: none; 
+    border: none; 
+    color: gray; 
+    background-color: #EDF0F7;
+    color: gray; 
+    font-size: 1.1em;  
+    font-family: 700;
+}
+#login-form-button {
+    width: 90%;  
+    width: 90%; 
+    padding: 3.5vh; 
+    border-radius: 20vh;
+    border: none;   
+    font-size: 1.2em; 
+    font-weight: 600;
+    background-color: green; 
+    color: white;
+}  
+#reset-senha {
+    color: gray;
+    text-decoration: none;
+}
+.sing-up-with-other {
+    padding-bottom: 9vh; 
+    color: gray;
+} 
+.sing-up-with-other a {
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+}

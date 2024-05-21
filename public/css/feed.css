@@ -1,0 +1,177 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+
+.nav-links {
+  border-top: 1px solid silver;
+  height: 10vh;
+  position: fixed;
+  width: 100%;
+  bottom: 0; 
+  z-index: 2;
+}
+.nav {
+  background-color: yellow;
+  height: 100%;
+}
+.links {
+  gap: 6vh;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+  height: 100%;
+}
+.links img {
+  height: 3.5vh;
+}
+.app-header {
+
+  height: 7vh;
+} 
+.chat { 
+ position: relative; 
+ left: 85%; 
+ top: 35%;
+ height: 5vh; 
+ cursor: pointer;
+}
+.app-users-stories {
+  height: 14vh; 
+ padding: 1vh;  
+ display: flex; 
+ gap: 2vh;
+ border-bottom: 0.5px solid silver;
+} 
+.your-storie {
+
+    width: 20%; 
+    height: 100%;  
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+} 
+.user-storie {
+
+    width: 20%; 
+    height: 100%;  
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+} 
+.user-image {
+    background-color: silver;  
+    height: 9vh;   
+    display: flex;
+    clip-path: circle();
+    align-items: center;
+    justify-content:center;
+    font-weight: bold;
+}  
+.add-story {
+    position: absolute; 
+    left: 15%; 
+    top: 14%; 
+    background-color: white; 
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    clip-path: circle() ;
+    padding: 0.5vh;
+} 
+.add-story button {
+    width: 2.5vh;  
+    background-color: #0079FF; 
+    color: white;
+    clip-path: circle() ; 
+    border: none;
+   
+    border-radius: 100vh;
+} 
+#you-name {
+    color: gray;
+}
+.user-name-stories {
+    font-weight: bold;
+}
+.feed {
+
+  padding-top: 2vh;
+  height: 100%;
+  display: flex;
+  padding-bottom: 20vh;
+  flex-direction: column; 
+  align-items: center;
+}
+.post {
+
+  
+  width: 95%;
+  border-radius: 2vh;
+}
+.user-info {
+  
+  display: flex;
+  height: 8vh;
+  align-items: center;
+}
+
+.user-img {
+   background: url(../utilites/user.png); 
+   background-position: center;
+   background-size: cover;
+  background-repeat: no-repeat;
+  width: 20%;
+  clip-path: circle();
+  height: 6vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.user-name {
+  font-size: 0.8em;
+  font-weight: bold;
+}
+.post-content {
+  height: 50vh;
+  background-color: silver; 
+  background: url(../utilites/images.jpeg); 
+  background-repeat: no-repeat; 
+  background-position:center;
+  background-size: cover;
+  border-radius: 2vh;
+}
+.interactions {
+  
+  padding: 1vh;
+} 
+
+.interact {
+  height: 100%;
+  padding-top: 2vh;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  list-style: none;
+  gap: 2vh;
+}
+.interact img {
+  height: 4vh;
+}
+#save {
+  position: relative;
+  left: 50%;
+}
+#save img {
+  height: 3vh;
+}
+.interactions  small {
+    font-weight: bold;
+}

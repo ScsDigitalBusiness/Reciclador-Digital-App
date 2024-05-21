@@ -1,0 +1,80 @@
+*{
+    margin: 0; 
+    box-sizing: border-box; 
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 0; 
+    
+}  
+ 
+body {
+    overflow: hidden;
+}
+.Login-area {
+  background: url(../utilites/bg-login.svg); 
+  background-position: center;
+  background-repeat: no-repeat; 
+  background-size: cover;
+  height: 100vh; 
+
+} 
+.login-text {
+    height: 50%; 
+    padding: 4vh;
+    padding-top: 15vh;
+}  
+.login-text p  {
+     
+    font-weight: bold; 
+    color: white; 
+    
+} 
+.login-text h1 {
+    font-size: 3em; 
+    color: white; 
+}
+.buttons { 
+    gap: 3vh; 
+    height: 50%;
+     
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    position: relative;
+    top: 10%;
+    flex-direction: column; 
+    
+} 
+ #login {
+    width: 80%; 
+    height: 15%; 
+    border-radius: 5vh; 
+ 
+ }   
+ #login button  {
+    width: 100%; 
+    height: 100%; 
+    border: none; 
+     background-color: green;
+    color: white; 
+    font-weight: 600; 
+    border-radius: 5vh; 
+ }
+ #create {
+    width: 80%; 
+    height: 15%;  
+    font-weight: 600;
+    border-radius: 5vh; 
+    background-color: white; 
+    color:  green; 
+    border: none; 
+  
+ } 
+ #create button {
+    width: 100%; 
+    height: 100%; 
+    border: none;  
+    color:  green; 
+    font-weight: 600; 
+    border-radius: 5vh;  
+    background-color: white; 
+ }

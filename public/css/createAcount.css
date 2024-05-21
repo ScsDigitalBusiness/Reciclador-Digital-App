@@ -1,0 +1,83 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+  
+  .Login-area {
+    background: url(../utilites/login-bg.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 150vh;
+    display: flex;
+    align-items: center;
+    justify-content: end; 
+    flex-direction: column;
+    
+  }
+  .form-login {
+  
+    padding-bottom: 4vh; 
+    background-color: white;
+    height: 100vh; 
+    border-radius: 5vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%; 
+    gap: 1.5vh;
+  }
+  #E-mail,#Senha,#confirmSenha,#Nome{
+      width: 90%; 
+      padding: 3.5vh; 
+      border-radius: 20vh;
+      border: none; 
+      background-color: #EDF0F7;
+      color: gray; 
+      font-size: 1.1em;  
+      font-family: 700;
+  
+  }   
+  #E-mail,#Senha,#confirmSenha,#Nome:focus {
+      outline: none; 
+      border: none; 
+      color: gray; 
+      background-color: #EDF0F7;
+      color: gray; 
+      font-size: 1.1em;  
+      font-family: 700;
+  }
+  #login-form-button {
+      width: 90%;  
+      width: 90%; 
+      padding: 3.5vh; 
+      border-radius: 20vh;
+      border: none;   
+      font-size: 1.2em; 
+      font-weight: 600;
+      background-color: green; 
+      color: white;
+  }  
+  #reset-senha {
+      color: gray;
+      text-decoration: none;
+  }
+  .login-with-other {
+      padding-bottom: 3vh; 
+      
+      color: gray;
+  } 
+  .login-with-other a {
+      text-decoration: none;
+      color: black;
+      font-weight: 600;
+  } 
+  .nameAlert p, .mailAlert p, .passAlert p  {
+    color: red; 
+    text-align: left; 
+    padding-left: 5vh; 
+    width: 100vw;
+  }
