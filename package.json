@@ -1,0 +1,32 @@
+{
+  "name": "reciclador-digital-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "routes.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ScsDigitalBusiness/Reciclador-Digital-App.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ScsDigitalBusiness/Reciclador-Digital-App/issues"
+  },
+  "homepage": "https://github.com/ScsDigitalBusiness/Reciclador-Digital-App#readme",
+  "dependencies": {
+    "connect-flash": "^0.1.1",
+    "connect-mongo": "^5.1.0",
+    "dotenv": "^16.4.5",
+    "ejs": "^3.1.10",
+    "express": "^4.19.2",
+    "express-session": "^1.18.0",
+    "mongoose": "^8.4.0",
+    "nodemon": "^3.1.0",
+    "validator": "^13.12.0"
+  }
+}
