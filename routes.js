@@ -9,7 +9,7 @@ const route = express.Router();
 //Login  e suas rotas  
 
 route.get("/", index);
-route.get("/login",indexLogin);
+route.get("/login",indexLogin);tes
 route.post("/login/auth",auth)
 
 //Criar conta routes: loginmodels
