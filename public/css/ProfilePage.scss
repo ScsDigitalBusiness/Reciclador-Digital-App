@@ -1,0 +1,204 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0; 
+  font-family: "Open Sans", sans-serif;
+}
+@mixin layout {
+  display: grid;
+  grid-template-areas:
+    "header-profile header-profile"
+    "profile-infos profile-infos"
+    "profile-posts profile-posts";
+}
+@mixin centralize {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+
+.main {
+  @include layout;
+}
+
+.header-profile {
+  grid-area: header-profile;
+  height: 8vh; 
+  padding-left: 2vh; 
+  padding-right: 1vh; 
+  @include centralize;
+  .profile-username {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    .username {
+      font-weight: bold; 
+      font-size: 1.2em;
+    }
+  }
+  .actions-header-profile {
+    width: 50%;
+    @include centralize;
+    .actions-profile {
+      display: flex;
+      align-items: center;
+      justify-content: end;
+      padding-right: 2vh;
+      width: 100%;
+      gap: 2vh;
+      li {
+        list-style: none;
+        display: flex;
+        img {
+          height: 4vh;
+        }
+      }
+    }
+  }
+}
+.profile-infos {
+  grid-area: profile-infos;
+  height: 40vh;
+  display: grid;
+  padding-left: 1vh;
+  padding-right: 1vh;
+
+  grid-template-areas:
+    "photo followersAndFollowing"
+    "biograph biograph"
+    "actions actions";
+
+  .user-photo {
+    grid-area: photo;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 20vh;
+    .user-img {
+      background-color: silver;
+      height: 90%;
+      clip-path: circle();
+      width: 90%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+  .followersAndFollowing {
+    grid-area: followersAndFollowing;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 4vh;
+    height: 20vh;
+    gap: 3vh;
+    .count {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      font-size: 1.1em;
+      p {
+        font-weight: bold;
+      }
+    }
+  }
+  .biograph {
+    grid-area: biograph;
+    
+    height: 10vh;
+    padding: 2vh; 
+    .user-profile-name {
+      p {
+        font-weight: bold;
+      }
+    }
+  }
+  .actions-in-profile {
+    grid-area: actions;
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    height: 5vh; 
+    .buttons {
+      button  {
+        width: 45vw; 
+        padding: 1.2vh; 
+        background-color: silver; 
+        border: none; 
+        font-weight: bold; 
+        border-radius: 1vh;
+      }
+    }
+}
+}
+.profile-posts {
+  background-color: white;
+  grid-area: profile-posts;
+
+  .post-nav {
+    height: 7vh;  
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    border-bottom: 1px solid silver;
+    
+    ul{    
+      padding-left: 2vh;  
+      padding-right: 2vh; 
+      width: 100%;
+      list-style: none;
+      height: 100%;
+      li{ 
+        width: 20%; 
+        display: flex;
+        align-items: center;
+        justify-content: center; 
+        height: 100%; 
+        border-bottom: 1px solid black;
+        img {
+          height: 3vh;
+        }
+      }
+    }
+  }  
+  .post-area {
+    
+    display: flex; 
+    align-items: center;
+    flex-direction: row; 
+    flex-wrap: wrap;
+    gap: 0.3vh; 
+    padding-bottom: 12vh;
+    .post-iamge {
+      background-color: silver; 
+      height:16vh;
+      width:32.7%;
+    }
+  }
+}
+.nav-links {
+  border-top: 1px solid silver;
+  height: 10vh;
+  position: fixed;
+  width: 100%; 
+  bottom: 0; 
+  z-index: 2;
+}
+.nav {
+  background-color: yellow;
+  height: 100%;
+}
+.links {
+  gap: 6vh;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+  height: 100%;
+}
+.links img {
+  height: 3.5vh;
+}

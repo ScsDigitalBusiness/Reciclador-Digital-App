@@ -12,11 +12,13 @@
     <section class="Login-area">  
       
             <% if(erros.length > 0) { %> 
+                <%setTimeout(() => { %>
                 <div  class="alert alert-danger position-fixed top-0" role="alert">
                     <% erros.forEach((erro)=>{ %>
                        <%=erro %>
                    <%  }) %>
                    </div> 
+                   <% }, 2000); %>
                <% } %> 
           <% if(sucess.length > 0 ) { %> 
             <div class="alert alert-success  position-fixed top-0" role="alert">

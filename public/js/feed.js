@@ -11,13 +11,13 @@ for (let i = 0; i < 10; i++) {
     <div class="post-content"></div>
     <div class="interactions">
       <ul class="interact">
-        <li id="like-${i}"><img id="likeImg-${i}" src="" alt="" /><img src="assets/utilites/like-icon.svg" alt=""></li>
+        <li id="like-${i}"><img id="likeImg-${i}" src="" alt="" /><img src="../utilites/like-icon.svg" alt=""></li>
 
-        <li id="comnent"><img src="" alt="" /><img src="assets/utilites/cmmnet-icon.svg" alt=""></li>
+        <li id="comnent"><img src="" alt="" /><img src=".../utilites/cmmnet-icon.svg" alt=""></li>
 
-        <li id="share"><img src="" alt="" /><img src="assets/utilites/share-icon.svg" alt=""></li>
+        <li id="share"><img src="" alt="" /><img src=".../utilites/share-icon.svg" alt=""></li>
 
-        <li id="save"><img src="" alt="" /><img src="assets/utilites/save-icon.svg" alt=""></li>
+        <li id="save"><img src="" alt="" /><img src=".../utilites/save-icon.svg" alt=""></li>
       </ul>
       <small class="likes-count"><span>2.000</span> Likes</small>
       <div class="legend"> 

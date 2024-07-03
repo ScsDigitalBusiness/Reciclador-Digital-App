@@ -12,13 +12,12 @@
     <section class="Login-area"> 
        <form  action="/signup/create" method="post" class="form-login"> 
             <% if(erros.length > 0) { %> 
-                    <div class="alert alert-danger position-fixed top-0" role="alert">
-                        <% erros.forEach((erro)=>{ %>  
-                            <%=erro %> 
-                         <%  }) %>
+                    <div class="alert alert-danger position-fixed top-0 start-50" role="alert">
+                        <% erros.forEach((erro)=>{ %>
+                       <%  }) %>
                     </div>
-             <% } %> 
-             <% if(sucess.length > 0 ) { %> 
+                <% } %> 
+               <% if(sucess.length > 0 ) { %> 
                 <div class="alert alert-success position-fixed top-0" role="alert">
                     <% sucess.forEach(scss=>{ %>
                         <%=  scss %>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <link rel="stylesheet" href="/css/ProfilePage.css"> 
+    <title>Profile</title>
+</head>
+<body>
+    <main class="main layout"> 
+        <header class="header-profile">
+            <div class="profile-username">
+                <p class="username">Profile</p>
+            </div> 
+            <div class="actions-header-profile">
+                <ul class="actions-profile">
+                    <li><img src="/utilites/add-icon.svg" alt=""></li> 
+                    <li><img  class="chat"  src="/utilites/share-icon.svg" alt=""></li>
+                </ul>
+            </div>
+        </header> 
+        <div class="profile-infos">
+            <div class="user-photo">
+              <div class="user-img" style="background: url(/utilites/user.jpg); background-position: center; background-repeat: no-repeat; background-size: cover; height: 100%; ">
+                 
+              </div>
+            </div>  
+            <div class="followersAndFollowing">
+                <div class="posts count">
+                    <p>0</p>
+                    <span>Posts</span>
+                </div> 
+                <div class="posts count">
+                    <p>0</p> 
+                    <span>Seguidores</span>
+                </div> 
+                <div class="posts count">
+                    <p>0</p> 
+                    <span>Seguindo</span>
+                </div>
+            </div>
+            <div class="biograph">
+             <div class="user-profile-name">
+                <p><%= user.name %></p> 
+             </div> 
+             <div class="biograph-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus a id molestias et adi
+             </div>
+           </div> 
+           <div class="actions-in-profile">
+             <div class="buttons">
+                <button class="edit">
+                    Editar Perfil
+                </button> 
+                <button class="share">
+                    Compartilhar Perfil
+                </button>
+             </div>
+           </div>
+        </div> 
+         <div class="profile-posts">
+            <header class="post-nav">
+                <ul>
+                    <li>
+                      <img src="/utilites/feed-grid.png" alt="">
+                    </li>
+                </ul>
+            </header> 
+            <div class="post-area"> 
+                <% for (let index = 0; index < 10; index++) { %>
+                   <div class="post-iamge">
+                    image
+                </div>
+                    
+                <%  } %>
+                <div class="post-iamge">
+                    image
+                </div>
+            </div>
+         </div>
+    </main>  
+    <header class="nav-links">
+        <nav class="nav">
+          <ul class="links">
+            <li><img src="/utilites/feed-icon.svg" alt=""></li>
+            <li><img src="/utilites/search-icon.svg" alt=""></li>
+            <li><img src="/utilites/add-icon.svg" alt=""></li>
+            <li><img src="/utilites/like-icon.svg" alt=""></li>
+            <li onclick="location.href ='/profile/index'" ><img src="/utilites/profile-icon.svg" alt=""></li>
+          </ul>
+        </nav>
+      </header>
+</body>
+</html>

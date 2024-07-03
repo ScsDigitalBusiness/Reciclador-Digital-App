@@ -1,0 +1,191 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Open Sans", sans-serif;
+}
+
+.main {
+  display: grid;
+  grid-template-areas: "header-profile header-profile" "profile-infos profile-infos" "profile-posts profile-posts";
+}
+
+.header-profile {
+  grid-area: header-profile;
+  height: 8vh;
+  padding-left: 2vh;
+  padding-right: 1vh;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+.header-profile .profile-username {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+.header-profile .profile-username .username {
+  font-weight: bold;
+  font-size: 1.2em;
+}
+.header-profile .actions-header-profile {
+  width: 50%;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+.header-profile .actions-header-profile .actions-profile {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  padding-right: 2vh;
+  width: 100%;
+  gap: 2vh;
+}
+.header-profile .actions-header-profile .actions-profile li {
+  list-style: none;
+  display: flex;
+}
+.header-profile .actions-header-profile .actions-profile li img {
+  height: 4vh;
+}
+
+.profile-infos {
+  grid-area: profile-infos;
+  height: 40vh;
+  display: grid;
+  padding-left: 1vh;
+  padding-right: 1vh;
+  grid-template-areas: "photo followersAndFollowing" "biograph biograph" "actions actions";
+}
+.profile-infos .user-photo {
+  grid-area: photo;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 20vh;
+}
+.profile-infos .user-photo .user-img {
+  background-color: silver;
+  height: 90%;
+  -webkit-clip-path: circle();
+          clip-path: circle();
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.profile-infos .followersAndFollowing {
+  grid-area: followersAndFollowing;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 4vh;
+  height: 20vh;
+  gap: 3vh;
+}
+.profile-infos .followersAndFollowing .count {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-size: 1.1em;
+}
+.profile-infos .followersAndFollowing .count p {
+  font-weight: bold;
+}
+.profile-infos .biograph {
+  grid-area: biograph;
+  height: 10vh;
+  padding: 2vh;
+}
+.profile-infos .biograph .user-profile-name p {
+  font-weight: bold;
+}
+.profile-infos .actions-in-profile {
+  grid-area: actions;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 5vh;
+}
+.profile-infos .actions-in-profile .buttons button {
+  width: 45vw;
+  padding: 1.2vh;
+  background-color: silver;
+  border: none;
+  font-weight: bold;
+  border-radius: 1vh;
+}
+
+.profile-posts {
+  background-color: white;
+  grid-area: profile-posts;
+}
+.profile-posts .post-nav {
+  height: 7vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 1px solid silver;
+}
+.profile-posts .post-nav ul {
+  padding-left: 2vh;
+  padding-right: 2vh;
+  width: 100%;
+  list-style: none;
+  height: 100%;
+}
+.profile-posts .post-nav ul li {
+  width: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  border-bottom: 1px solid black;
+}
+.profile-posts .post-nav ul li img {
+  height: 3vh;
+}
+.profile-posts .post-area {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 0.3vh;
+  padding-bottom: 12vh;
+}
+.profile-posts .post-area .post-iamge {
+  background-color: silver;
+  height: 16vh;
+  width: 32.7%;
+}
+
+.nav-links {
+  border-top: 1px solid silver;
+  height: 10vh;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  z-index: 2;
+}
+
+.nav {
+  background-color: yellow;
+  height: 100%;
+}
+
+.links {
+  gap: 6vh;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+  height: 100%;
+}
+
+.links img {
+  height: 3.5vh;
+}/*# sourceMappingURL=ProfilePage.css.map */
