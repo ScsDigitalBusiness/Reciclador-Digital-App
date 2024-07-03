@@ -59,22 +59,22 @@
 }
 .profile-infos {
   grid-area: profile-infos;
-  height: 40vh;
+  height: 31vh;
   display: grid;
   padding-left: 1vh;
   padding-right: 1vh;
-
   grid-template-areas:
     "photo followersAndFollowing"
     "biograph biograph"
     "actions actions";
 
-  .user-photo {
+  .user-photo { 
+
     grid-area: photo;
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 20vh;
+    height: 15vh;  
     .user-img {
       background-color: silver;
       height: 90%;
@@ -85,13 +85,12 @@
       justify-content: center;
     }
   }
-  .followersAndFollowing {
+  .followersAndFollowing { 
     grid-area: followersAndFollowing;
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 4vh;
-    height: 20vh;
+    height: 15vh; 
     gap: 3vh;
     .count {
       display: flex;
@@ -106,7 +105,6 @@
   }
   .biograph {
     grid-area: biograph;
-    
     height: 10vh;
     padding: 2vh; 
     .user-profile-name {

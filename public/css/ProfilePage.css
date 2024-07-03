@@ -53,7 +53,7 @@
 
 .profile-infos {
   grid-area: profile-infos;
-  height: 40vh;
+  height: 31vh;
   display: grid;
   padding-left: 1vh;
   padding-right: 1vh;
@@ -64,7 +64,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 20vh;
+  height: 15vh;
 }
 .profile-infos .user-photo .user-img {
   background-color: silver;
@@ -81,8 +81,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 4vh;
-  height: 20vh;
+  height: 15vh;
   gap: 3vh;
 }
 .profile-infos .followersAndFollowing .count {
